@@ -4,26 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fahrenheit to Celcius</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <script>
-        function rounded (number) {
-  return Math.round(number * 10) / 10;
-}
+  <main>
+    <h1>Convert to Celcius</h1>
 
-function convertToCelsius() {
-  let question = prompt("Enter Fahrenheit to convert to Celcius.");
-  let celcius = (question - 32) * 5/9;
-  alert(rounded(celcius));
-};
+    <div class="container">
 
-function convertToFahrenheit() {
-  let question = prompt("Enter Fahrenheit to convert to Celcius.");
-  let fahrenheit = (question * 9/5 + 32);
-  console.log(rounded(fahrenheit));
-};
+      <div class="input-field">
+        <input type="number" class="input" placeholder="Enter °F">
+        <button class="convertButton">Convert</button>
+      </div>
 
-convertToCelsius();
-    </script>
+      <p class="result"></p>
+    </div>
+  </main>
 </body>
 </html>
